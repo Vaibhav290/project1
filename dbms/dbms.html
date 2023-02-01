@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center; color: orange;" >DataBase Management System</h1>
+    <h3><b style="color: orange;">What is Database?</b></h3>
+    <p>
+      Data is a collection of a distinct small unit of information. It can be
+      used in a variety of forms like text, numbers, media, bytes, etc. it can
+      be stored in pieces of paper or electronic memory, etc. Word 'Data' is
+      originated from the word 'datum' that means 'single piece of information.'
+      It is plural of the word datum. In computing, Data is information that can
+      be translated into a form for efficient movement and processing. Data is
+      interchangeable.
+    </p>
+    <p>
+      A <b style="color: orange;">database</b> is an organized collection of data, so that it can be
+      easily accessed and managed. Play Video You can organize data into tables,
+      rows, columns, and index it to make it easier to find relevant
+      information.
+
+      <b>Database handlers</b> create a database in such a way that only one set
+      of software program provides access of data to all the users. The
+      <b>main purpose</b> of the database is to operate a large amount of
+      information by storing, retrieving, and managing data. There are many
+      <b>dynamic websites</b> on the World Wide Web nowadays which are handled
+      through databases. For example, a model that checks the availability of
+      rooms in a hotel. It is an example of a dynamic website that uses a
+      database. There are many <b>databases available</b> like MySQL, Sybase,
+      Oracle, MongoDB, Informix, PostgreSQL, SQL Server, etc. Modern databases
+      are managed by the database management system (DBMS).
+
+      <b>SQL</b> or Structured Query Language is used to operate on the data
+      stored in a database. SQL depends on relational algebra and tuple
+      relational calculus. A cylindrical structure is used to display the image
+      of a database.
+    </p>
+
+    <img
+      src="https://static.javatpoint.com/sqlpages/images/database2.jpg"
+      alt="vaibhav"
+      class="center"
+    />
+    <h3><b style="color: orange;">What is DBMS?</b></h3>
+    <p>
+      <b>Database Management System (DBMS)</b> is software for storing and
+      retrieving users’ data while considering appropriate security measures. It
+      consists of a group of programs that manipulate the database. The DBMS
+      accepts the request for data from an application and instructs the
+      operating system to provide the specific data. In large systems, a DBMS
+      helps users and other third-party software store and retrieve data.
+    </p>
+    <p>
+      DBMS allows users to create their own databases as per their requirements.
+      The term “DBMS” includes the user of the database and other application
+      programs. It provides an interface between the data and the software
+      application. Let us see a simple example of a university database. This
+      database is maintaining information concerning students, courses, and
+      grades in a university environment. The database is organized as five
+      files:
+    </p>
+    <ul>
+      <li>The STUDENT file stores the data of each student</li>
+      <li>The COURSE file stores contain data on each course.</li>
+      <li>
+        The SECTION stores information about sections in a particular course.
+      </li>
+      <li>
+        The GRADE file stores the grades which students receive in the various
+        sections
+      </li>
+      <li>The TUTOR file contains information about each professor.</li>
+    </ul>
+    <p>To define DBMS:</p>
+    <ul>
+      <li>
+        We need to specify the structure of the records of each file by defining
+        the different types of data elements to be stored in each record.
+      </li>
+      <li>
+        We can also use a coding scheme to represent the values of a data item.
+      </li>
+      <li>
+        Basically, your Database will have 5 tables with a foreign key defined
+        amongst the various tables.
+      </li>
+    </ul>
+    <p><b>Characteristics of DBMS : </b></p>
+    <p>
+      Here are the characteristics and properties of a Database Management
+      System:
+    </p>
+    <ul>
+      <li>Provides security and removes redundancy</li>
+      <li>Self-describing nature of a database system</li>
+      <li>Insulation between programs and data abstraction</li>
+      <li>Support of multiple views of the data</li>
+      <li>Sharing of data and multiuser transaction processing</li>
+      <li>
+        Database Management Software allows entities and relations among them to
+        form tables.
+      </li>
+      <li>
+        It follows the ACID concept ( Atomicity, Consistency, Isolation, and
+        Durability).
+      </li>
+      <li>
+        DBMS supports a multi-user environment that allows users to access and
+        manipulate data in parallel.
+      </li>
+    </ul>
+    <h3><b style="color: orange;">Types of DBMS : </b></h3>
+    <ul>
+      <li >Hierarchical database</li>
+      <li>Network database</li>
+      <li >Relational database</li>
+      <li >Object-Oriented database</li>
+    </ul>
+    <p>
+      <b style="color: yellow;">Hierarchical DBMS : </b>In a Hierarchical database, model data is
+      organized in a tree-like structure. Data is Stored Hierarchically
+      (top-down or bottom-up) format. Data is represented using a parent-child
+      relationship. In Hierarchical DBMS, parents may have many children, but
+      children have only one parent.
+    </p>
+    <p>
+      <b style="color: yellow;">Network Model : </b>The network database model allows each child to
+      have multiple parents. It helps you to address the need to model more
+      complex relationships like the orders/parts many-to-many relationship. In
+      this model, entities are organized in a graph which can be accessed
+      through several paths.
+    </p>
+    <p>
+      <b style="color: yellow;">Relational Model : </b>Relational DBMS is the most widely used DBMS
+      model because it is one of the easiest. This model is based on normalizing
+      data in the rows and columns of the tables. Relational model stored in
+      fixed structures and manipulated using SQL.
+    </p>
+    <p>
+      <b style="color: yellow;">Object-Oriented Model : </b>In the Object-oriented Model data is stored
+      in the form of objects. The structure is called classes which display data
+      within it. It is one of the components of DBMS that defines a database as
+      a collection of objects that stores both data members’ values and
+      operations.
+    </p>
+    <p><b>Advantages of DBMS : </b></p>
+    <ul>
+      <li>DBMS offers a variety of techniques to store & retrieve data</li>
+      <li>
+        DBMS serves as an efficient handler to balance the needs of multiple
+        applications using the same data
+      </li>
+      <li>Uniform administration procedures for data</li>
+      <li>
+        Application programmers are never exposed to details of data
+        representation and storage.
+      </li>
+      <li>
+        A DBMS uses various powerful functions to store and retrieve data
+        efficiently.
+      </li>
+      <li>Offers Data Integrity and Security</li>
+      <li>
+        The DBMS implies integrity constraints to get a high level of protection
+        against prohibited access to data.
+      </li>
+      <li>
+        A DBMS schedules concurrent access to the data in such a manner that
+        only one user can access the same data at a time
+      </li>
+      <li>Reduced Application Development Time</li>
+    </ul>
+    <p><b>Disadvantages of DBMS : </b></p>
+    <ul>
+      <li>
+        The cost of Hardware and Software of a DBMS is quite high, which
+        increases the budget of your organization.
+      </li>
+      <li>
+        Most database management systems are often complex, so training users to
+        use the DBMS is required.
+      </li>
+      <li>
+        In some organizations, all data is integrated into a single database
+        that can be damaged because of electric failure or corruption in the
+        storage media.
+      </li>
+      <li>
+        Using the same program at a time by multiple users sometimes leads to
+        data loss.
+      </li>
+      <li>DBMS can’t perform sophisticated calculations</li>
+    </ul>
+    <h3><b style="color: orange;">Need For DBMS : </b></h3>
+    <p>A Data Base Management System is a system software for easy, efficient and reliable data processing and management. It can be used for:</p>
+    <ul>
+        <li>Creation of a database.</li>
+        <li>Retrieval of information from the database.</li>
+        <li>Updating the database.</li>
+        <li>Managing a database.</li>
+    </ul>
+    <p>It provides us with the many functionalities and is more advantageous than the traditional file system in many ways listed below:</p>
+    <ol>
+        <li><b>Processing Queries and Object Management : </b>In traditional file systems, we cannot store data in the form of objects. In practical-world applications, data is stored in objects and not files. So in a file system, some application software maps the data stored in files to objects so that can be used further.
+            We can directly store data in the form of objects in a database management system. Application level code needs to be written to handle, store and scan through the data in a file system whereas a DBMS gives us the ability to query the database.
+        </li>
+        <li><b>Controlling redundancy and inconsistency : </b>Redundancy refers to repeated instances of the same data. A database system provides redundancy control whereas in a file system, same data may be stored multiple times. For example, if a student is studying two different educational programs in the same college, say ,Engineering and History, then his information such as the phone number and address may be stored multiple times, once in Engineering dept and the other in History dept. Therefore, it increases time taken to access and store data. This may also lead to inconsistent data states in both places. A DBMS uses data normalization to avoid redundancy and duplicates.</li>
+        <li><b>Efficient memory management and indexing : </b>DBMS makes complex memory management easy to handle. In file systems, files are indexed in place of objects so query operations require entire file scans whereas in a DBMS , object indexing takes place efficiently through database schema based on any attribute of the data or a data-property. This helps in fast retrieval of data based on the indexed attribute.</li>
+        <li><b>Concurrency control and transaction management : </b>Several applications allow user to simultaneously access data. This may lead to inconsistency in data in case files are used. Consider two withdrawal transactions X and Y in which an amount of 100 and 200 is withdrawn from an account A initially containing 1000. Now since these transactions are taking place simultaneously, different transactions may update the account differently. X reads 1000, debits 100, updates the account A to 900, whereas Y also reads 1000, debits 200, updates A to 800. In both cases account A has wrong information. This results in data inconsistency. A DBMS provides mechanisms to deal with this kind of data inconsistency while allowing users to access data concurrently. A DBMS implements ACID(atomicity, durability, isolation,consistency) properties to ensure efficient transaction management without data corruption.</li>
+        <li><b>Access Control and ease in accessing data : </b>A DBMS can grant access to various users and determine which part and how much of the data can they access from the database thus removing redundancy. Otherwise in file system, separate files have to be created for each user containing the amount of data that they can access. Moreover, if a user has to extract specific data, then he needs a code/application to process that task in case of file system, e.g. Suppose a manager needs a list of all employees having salary greater than X. Then we need to write business logic for the same in case data is stored in files. In case of DBMS, it provides easy access of data through queries, (e.g., SELECT queries) and whole logic need not be rewritten. Users can specify exactly what they want to extract out of the data.</li>
+        <li><b>Integrity constraints : </b>Data stored in databases must satisfy integrity constraints. For example, Consider a database schema consisting of the various educational programs offered by a university such as(B.Tech/M.Tech/B.Sc/M.Sc/BCA/MCA) etc. Then we have a schema of students enrolled in these programs. A DBMS ensures that it is only out of one of the programs offered schema , that the student is enrolled in, i.e. Not anything out of the blue. Hence, database integrity is preserved.</li>
+    </ol>
+    <h3><b style="color: orange;">Difference between File System and DBMS : </b></h3>
+    <p>File based systems were an early attempt to computerize the manual system. It is also called a traditional based approach in which a decentralized approach was taken where each department stored and controlled its own data with the help of a data processing specialist. The main role of a data processing specialist was to create the necessary computer file structures, and also manage the data within structures and design some application programs that create reports based on file data.</p>
+    <img src="https://static.javatpoint.com/dbms/images/dbms-vs-files-system.png" alt="image" class="center1">
+    <p>Consider an example of a student's file system. The student file will contain information regarding the student (i.e. roll no, student name, course etc.). Similarly, we have a subject file that contains information about the subject and the result file which contains the information regarding the result.
+
+        Some fields are duplicated in more than one file, which leads to data redundancy. So to overcome this problem, we need to create a centralized system, i.e. DBMS approach.</p>
+        <img src="https://static.javatpoint.com/dbms/images/dbms-vs-files-system2.png" alt="image" class="center2">
+        <p><b>Difference Between Two-Tier And Three-Tier database architecture :</b></p>
+        <ol>
+            <li><b>Two-Tier Database Architecture : </b>In two-tier, the application logic is either buried inside the User Interface on the client or within the database on the server (or both). With two-tier client/server architectures, the user system interface is usually located in the user’s desktop environment and the database management services are usually in a server that is a more powerful machine that services many clients.</li>
+            <li><b>Three-Tier Database Architecture : </b>In three-tier, the application logic or process lives in the middle-tier, it is separated from the data and the user interface. Three-tier systems are more scalable, robust and flexible. In addition, they can integrate data from multiple sources. In the three-tier architecture, a middle tier was added between the user system interface client environment and the database management server environment. There are a variety of ways of implementing this middle tier, such as transaction processing monitors, message servers, or application servers.</li>
+        </ol>
+        <h3><b style="color: orange;">SQL :- DDL, DQL, DML, DCL and TCL Commands</b></h3>
+        <p>Structured Query Language(SQL) as we all know is the database language by the use of which we can perform certain operations on the existing database and also we can use this language to create a database. SQL uses certain commands like Create, Drop, Insert, etc. to carry out the required tasks. </p>
+        <p>These SQL commands are mainly categorized into five categories as: </p>
+        <ol>
+            <li>DDL : Data Definition Language</li>
+            <li>DQL : Data Query Language</li>
+            <li>DML : Data Manipulation Language</li>
+            <li>DCL : Data Control Language</li>
+            <li>TCL : Transaction Control Language</li>
+        </ol>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210920153429/new.png" alt="image" class="center3">
+        <p><b style="color: yellow;">DDL (Data Definition Language): </b>DDL or Data Definition Language actually consists of the SQL commands that can be used to define the database schema. It simply deals with descriptions of the database schema and is used to create and modify the structure of database objects in the database. DDL is a set of SQL commands used to create, modify, and delete database structures but not data. These commands are normally not used by a general user, who should be accessing the database via an application.</p>
+        <p>List of DDL commands: </p>
+        <ul>
+            <li>CREATE: This command is used to create the database or its objects (like table, index, function, views, store procedure, and triggers).</li>
+            <li>DROP: This command is used to delete objects from the database.</li>
+            <li>ALTER: This is used to alter the structure of the database.</li>
+            <li>TRUNCATE: This is used to remove all records from a table, including all spaces allocated for the records are removed.</li>
+            <li>COMMENT: This is used to add comments to the data dictionary.</li>
+            <li>RENAME: This is used to rename an object existing in the database</li>
+        </ul>
+        <p><b style="color: yellow;">DQL (Data Query Language):</b></p>
+        <p>DQL statements are used for performing queries on the data within schema objects. The purpose of the DQL Command is to get some schema relation based on the query passed to it. We can define DQL as follows it is a component of SQL statement that allows getting data from the database and imposing order upon it. It includes the SELECT statement. This command allows getting the data out of the database to perform operations with it. When a SELECT is fired against a table or tables the result is compiled into a further temporary table, which is displayed or perhaps received by the program i.e. a front-end.</p>
+        <p>List of DQL: </p>
+        <ul>
+            <li>SELECT: It is used to retrieve data from the database</li>
+        </ul>
+        <p><b  style="color: yellow;">DML(Data Manipulation Language): </b></p>
+        <p>The SQL commands that deals with the manipulation of data present in the database belong to DML or Data Manipulation Language and this includes most of the SQL statements. It is the component of the SQL statement that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.</p>
+        <p>List of DML commands: </p>
+        <ul>
+            <li> <b>INSERT :</b> It is used to insert data into a table.</li>
+            <li> <b>UPDATE :</b> It is used to update existing data within a table.</li>
+            <li> <b>DELETE :</b> It is used to delete records from a database table.</li>
+            <li> <b>LOCK :</b> Table control concurrency.</li>
+            <li> <b>CALL :</b> Call a PL/SQL or JAVA subprogram.</li>
+            <li> <b>EXPLAIN PLAN :</b> It describes the access path to data.</li>
+        </ul>
+        <p><b style="color: yellow;">DCL (Data Control Language): </b></p>
+        <p>DCL includes commands such as GRANT and REVOKE which mainly deal with the rights, permissions, and other controls of the database system. </p>
+        <p>List of  DCL commands: </p>
+        <ul>
+            <li>GRANT: This command gives users access privileges to the database.</li>
+            <li>REVOKE: This command withdraws the user’s access privileges given by using the GRANT command</li>
+        </ul>
+        <p><b style="color: yellow;">TCL (Transaction Control Language) : </b></p>
+        <p>Transactions group a set of tasks into a single execution unit. Each transaction begins with a specific task and ends when all the tasks in the group successfully complete. If any of the tasks fail, the transaction fails. Therefore, a transaction has only two results: success or failure. You can explore more about transactions here. Hence, the following TCL commands are used to control the execution of a transaction: </p>
+        <ul>
+            <li><b>COMMIT :</b> Commits a Transaction.</li>
+            <li><b>ROLLBACK :</b>Rollbacks a transaction in case of any error occurs.</li>
+            <li> <b>SAVEPOINT :</b> Sets a save point within a transaction.</li>
+            <li> <b>SET TRANSACTION:</b> Specifies characteristics for the transaction.</li>
+        </ul>
+        <p><b style="color: yellow;">Instances, Schema and Sub Schema In DBMS?</b></p>
+        <p><b>Instances in DBMS : </b>
+            In simple words, it is the snapshot of the database taken at a particular moment. It can also be described in more significant way as the collection of the information stored in the database at that particular moment. Instance can also be called as the database state or current set of occurrence due the fact that it is information that is present at the current state.</p>
+        <p> <b>Schema in DBMS : </b>
+            It is the overall description or the overall design of the database specified during the database design. Important thing to be remembered here is it should not be changed frequently. Basically, it displays the record types(entity),names of data items(attribute) but not the relation among the files.</p>
+        <p> <b>Sub schema in DBMS : </b>
+            It can be defined as the subset or sub-level of schema that has the same properties as the schema. In simple words it is just a effective plan or the schema for the view. Well, it is interesting to note that it provides the users a window through which the user can view only that part of database which is of matter of interest to him. It Identifies subset of areas, sets, records, data names defined in database that is of interest to him. Thus a portion of database can be seen by application programs and different application programs has different view of data.</p>
+        <h3><b style="color: orange;">RDBMS (relational database management system) : </b></h3>
+        <p>A relational database management system (RDBMS) is a collection of programs and capabilities that enable IT teams and others to create, update, administer and otherwise interact with a relational database. RDBMSes store data in the form of tables, with most commercial relational database management systems using Structured Query Language (SQL) to access the database. However, since SQL was invented after the initial development of the relational model, it is not necessary for RDBMS use.
+
+            The RDBMS is the most popular database system among organizations across the world. It provides a dependable method of storing and retrieving large amounts of data while offering a combination of system performance and ease of implementation.</p>
+        <p><b style="color: yellow;">RDBMS vs. DBMS </b></p>
+        <p>In general, databases store sets of data that can be queried for use in other applications. A database management system supports the development, administration and use of database platforms.
+
+            An RDBMS is a type of database management system (DBMS) that stores data in a row-based table structure which connects related data elements. An RDBMS includes functions that maintain the security, accuracy, integrity and consistency of the data. This is different than the file storage used in a DBMS.
+            
+            Other differences between database management systems and relational database management systems include:
+            
+            </p>
+        <ul>
+            <li><b>Number of allowed users.</b> While a DBMS can only accept one user at a time, an RDBMS can operate with multiple users.</li>
+            <li> <b>Hardware and software requirements.</b> A DBMS needs less software and hardware than an RDBMS.</li>
+            <li> <b>Amount of data.</b> RDBMSes can handle any amount of data, from small to large, while a DBMS can only manage small amounts.</li>
+            <li> <b>Database structure.</b> In a DBMS, data is kept in a hierarchical form, whereas an RDBMS utilizes a table where the headers are used as column names and the rows contain the corresponding values.</li>
+            <li> <b>ACID implementation.</b> DBMSes do not use the atomicity, consistency, isolation and durability (ACID) model for storing data. On the other hand, RDBMSes base the structure of their data on the ACID model to ensure consistency.</li>
+            <li> <b>Distributed databases.</b> While an RDBMS offers complete support for distributed databases, a DBMS will not provide support.</li>
+            <li> <b>Types of programs managed.</b> While an RDBMS helps manage the relationships between its incorporated tables of data, a DBMS focuses on maintaining databases that are present within the computer network and system hard disks.</li>
+            <li> <b>Support of database normalization.</b> An RDBMS can be normalized, but a DBMS cannot.</li>
+        </ul>
+        <img src="https://cdn.ttgtmedia.com/rms/onlineImages/data_management-dbms_vs_rdbms.jpg" alt="image" class="center4">
+        <p><b style="color: yellow;">Features of relational database management systems</b></p>
+        <p>Elements of the relational database management system that overarch the basic relational database are so intrinsic to operations that it is hard to dissociate the two in practice.
+
+            The most basic RDBMS functions are related to create, read, update and delete operations -- collectively known as CRUD. They form the foundation of a well-organized system that promotes consistent treatment of data.
+            
+            The RDBMS typically provides data dictionaries and metadata collections that are useful in data handling. These programmatically support well-defined data structures and relationships. Data storage management is a common capability of the RDBMS, and this has come to be defined by data objects that range from binary large object -- or blob -- strings to stored procedures. Data objects like this extend the scope of basic relational database operations and can be handled in a variety of ways in different RDBMSes.
+            
+            The most common means of data access for the RDBMS is SQL. Its main language components comprise data manipulation language and data definition language statements. Extensions are available for development efforts that pair SQL use with common programming languages, such as the Common Business-Oriented Language (COBOL), Java and .NET.
+            
+            RDBMSes use complex algorithms that support multiple concurrent user access to the database while maintaining data integrity. Security management, which enforces policy-based access, is yet another overlay service that the RDBMS provides for the basic database as it is used in enterprise settings.
+            
+            RDBMSes support the work of database administrators (DBAs) who must manage and monitor database activity. Utilities help automate data loading and database backup. RDBMSes manage log files that track system performance based on selected operational parameters. This enables measurement of database usage, capacity and performance, particularly query performance. RDBMSes provide graphical interfaces that help DBAs visualize database activity.
+            
+            While not limited solely to the RDBMS, ACID compliance is an attribute of relational technology that has proved important in enterprise computing. These capabilities have particularly suited RDBMSes for handling business transactions.
+            
+            As RDBMSes have matured, they have achieved increasingly higher levels of query optimization, and they have become key parts of reporting, analytics and data warehousing applications for businesses as well. RDBMSes are intrinsic to operations of a variety of enterprise applications and are at the center of most master data management systems.</p>
+        <p><b style="color: yellow;">How RDBMS works?</b></p>
+        <p>As mentioned before, an RDBMS will store data in the form of a table. Each system will have varying numbers of tables with each table possessing its own unique primary key. The primary key is then used to identify each table.
+
+            Within the table are rows and columns. The rows are known as records or horizontal entities; they contain the information for the individual entry. The columns are known as vertical entities and possess information about the specific field.</p>
+            <p>Before creating these tables, the RDBMS must check the following constraints : </p>
+            <ul>
+                <li><b>Primary keys :</b> this identifies each row in the table. One table can only contain one primary key. The key must be unique and without null values.</li>
+                <li> <b>Foreign keys :</b> this is used to link two tables. The foreign key is kept in one table and refers to the primary key associated with another table</li>
+                <li> <b>Not null :</b> this ensures that every column does not have a null value, such as an empty cell.</li>
+                <li> <b>Check :</b> this confirms that each entry in a column or row satisfies a precise condition and that every column holds unique data.</li>
+                <li> <b>Data integrity :</b> the integrity of the data must be confirmed before the data is created.</li>
+            </ul>
+            <p>Assuring the integrity of data includes several specific tests, including entity, domain, referential and user-defined integrity. Entity integrity confirms that the rows are not duplicated in the table. Domain integrity makes sure that data is entered into the table based on specific conditions, such as file format or range of values. Referential integrity ensures that any row that is re-linked to a different table cannot be deleted. Finally, user-defined integrity confirms that the table will satisfy all user-defined conditions.</p>
+            <p><b>Advantages of relational database management system : </b></p>
+            <p>The use of an RDBMS can be beneficial to most organizations; the systematic view of raw data helps companies better understand and execute the information while enhancing the decision-making process. The use of tables to store data also improves the security of information stored in the databases. Users are able to customize access and set barriers to limit the content that is made available. This feature makes the RDBMS particularly useful to companies in which the manager decides what data is provided to employees and customers.
+
+                Furthermore, RDBMSes make it easy to add new data to the system or alter existing tables while ensuring consistency with the previously available content.
+                
+                </p>
+                <p>Other advantages of the RDBMS include:</p>
+            <ul>
+                <li> <b>Flexibility :</b> updating data is more efficient since the changes only need to be made in one place.</li>
+                <li><b>Maintenance :</b> database administrators can easily maintain, control and update data in the database. Backups also become easier since automation tools included in the RDBMS automate these tasks.</li>
+                <li><b>Data structure :</b> the table format used in RDBMSes is easy to understand and provides an organized and structural manner through which entries are matched by firing queries.</li>
+            </ul>
+            <p>On the other hand, relational database management systems do not come without their disadvantages. For example, in order to implement an RDBMS, special software must be purchased. This introduces an additional cost for execution. Once the software is obtained, the setup process can be tedious since it requires millions of lines of content to be transferred into the RDBMS tables. This process may require the additional help of a programmer or a team of data entry specialists. Special attention must be paid to the data during entry to ensure sensitive information is not placed into the wrong hands.
+
+                Some other drawbacks of the RDBMS include the character limit placed on certain fields in the tables and the inability to fully understand new forms of data -- such as complex numbers, designs and images.
+                
+                Furthermore, while isolated databases can be created using an RDBMS, the process requires large chunks of information to be separated from each other. Connecting these large amounts of data to form the isolated database can be very complicated.</p>
+                <p><b style="color: yellow;">Uses of RDBMS : </b></p>
+                <p>Relational database management systems are frequently used in disciplines such as manufacturing, human resources and banking. The system is also useful for airlines that need to store ticket service and passenger documentation information as well as universities maintaining student databases.
+
+                    Some examples of specific systems that use RDBMS include IBM, Oracle, MySQL, Microsoft SQLServer and PostgreSQL.</p>
+        <h3><b style="color: orange;">Deadlock in DBMS : </b></h3>   
+        <p>In a database, a deadlock is an unwanted situation in which two or more transactions are waiting indefinitely for one another to give up locks. Deadlock is said to be one of the most feared complications in DBMS as it brings the whole system to a Halt. 
+
+            Example :  let us understand the concept of Deadlock with an example : 
+            Suppose, Transaction T1 holds a lock on some rows in the Students table and needs to update some rows in the Grades table. Simultaneously, Transaction T2 holds locks on those very rows (Which T1 needs to update) in the Grades table but needs to update the rows in the Student table held by Transaction T1. 
+            
+            Now, the main problem arises. Transaction T1 will wait for transaction T2 to give up the lock, and similarly, transaction T2 will wait for transaction T1 to give up the lock. As a consequence, All activity comes to a halt and remains at a standstill forever unless the DBMS detects the deadlock and aborts one of the transactions. </p>
+        <img src="https://static.javatpoint.com/dbms/images/deadlock-in-dbms.png" alt="image" class="center5">
+        <p><b style="color: yellow;">Deadlock Avoidance : </b></p>
+        <p>When a database is stuck in a deadlock, It is always better to avoid the deadlock rather than restarting or aborting the database. The deadlock avoidance method is suitable for smaller databases whereas the deadlock prevention method is suitable for larger databases. 
+            One method of avoiding deadlock is using application-consistent logic. In the above-given example, Transactions that access Students and  Grades should always access the tables in the same order. In this way, in the scenario described above, Transaction T1 simply waits for transaction T2 to release the lock on  Grades before it begins. When transaction T2 releases the lock, Transaction T1 can proceed freely. 
+            Another method for avoiding deadlock is to apply both row-level locking mechanism and READ COMMITTED isolation level. However, It does not guarantee to remove deadlocks completely. </p>
+        <p><b style="color: yellow;">Deadlock Detection : </b></p>
+        <p>When a transaction waits indefinitely to obtain a lock, The database management system should detect whether the transaction is involved in a deadlock or not. </p>
+        <p><b style="color: yellow;">Wait-for-graph</b> is one of the methods for detecting the deadlock situation. This method is suitable for smaller databases. In this method, a graph is drawn based on the transaction and their lock on the resource. If the graph created has a closed-loop or a cycle, then there is a deadlock. </p>
+        <p><b style="color: yellow;">Deadlock prevention : </b></p>
+        <p>For a large database, the deadlock prevention method is suitable. A deadlock can be prevented if the resources are allocated in such a way that deadlock never occurs. The DBMS analyzes the operations whether they can create a deadlock situation or not, If they do, that transaction is never allowed to be executed. </p>
+        <p>Deadlock prevention mechanism proposes two schemes : </p>
+        <ul>
+            <li> <b><u>Wait-Die Scheme :</u> </b>In this scheme, If a transaction requests a resource that is locked by another transaction, then the DBMS simply checks the timestamp of both transactions and allows the older transaction to wait until the resource is available for execution. 
+                Suppose, there are two transactions T1 and T2, and Let the timestamp of any transaction T be TS (T). Now, If there is a lock on T2 by some other transaction and T1 is requesting for resources held by T2, then DBMS performs the following actions: 
+                Checks if TS (T1) < TS (T2) : if T1 is the older transaction and T2 has held some resource, then it allows T1 to wait until resource is available for execution. That means if a younger transaction has locked some resource and an older transaction is waiting for it, then an older transaction is allowed to wait for it till it is available. If T1 is an older transaction and has held some resource with it and if T2 is waiting for it, then T2 is killed and restarted later with random delay but with the same timestamp. i.e. if the older transaction has held some resource and the younger transaction waits for the resource, then the younger transaction is killed and restarted with a very minute delay with the same timestamp. 
+                This scheme allows the older transaction to wait but kills the younger one. </li>
+            <li> <b> <u>Wound Wait Scheme :</u> </b>In this scheme, if an older transaction requests for a resource held by a younger transaction, then an older transaction forces a younger transaction to kill the transaction and release the resource. The younger transaction is restarted with a minute delay but with the same timestamp. If the younger transaction is requesting a resource that is held by an older one, then the younger transaction is asked to wait till the older one releases it. </li>
+        </ul>
+
+  </body>
+</html>
