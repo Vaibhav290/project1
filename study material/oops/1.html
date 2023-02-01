@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <h1 style="text-align: center;">Object Oriented Programming (OOPs) Concept in Java</h1>
+    
+    <p>As the name suggests, <b style="color: yellow;">Object-Oriented Programming or OOPs</b> refers to languages that use objects in programming, they use objects as a primary source to implement what is to happen in the code. Objects are seen by the viewer or user, performing tasks assigned by you. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism etc. in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function. </p>
+
+    <p>Let us discuss prerequisites by polishing concepts of method declaration and message passing. Starting off with the method declaration, it consists of six components: </p>
+    <p>
+       
+<ul>
+    <li><b style="color: orange;">Access Modifier:</b> Defines the access type of the method i.e. from where it can be accessed in your application. In Java, there are 4 types of access specifiers: </li>
+    <ul>
+        <li><b>public:</b> Accessible in all classes in your application.</li>
+        <li> <b>protected:</b> Accessible within the package in which it is defined and in its subclass(es) (including subclasses declared outside the package).</li>
+        <li> <b>private:</b> Accessible only within the class in which it is defined.</li>
+        <li> <b>default (declared/defined without using any modifier):</b> Accessible within the same class and package within which its class is defined.</li>
+        
+    </ul>
+    <li> <b>The return type:</b> The data type of the value returned by the method or void if it does not return a value.</li>
+    <li> <b>Method Name:</b> The rules for field names apply to method names as well, but the convention is a little different.</li>
+    <li> <b>Parameter list:</b> Comma-separated list of the input parameters that are defined, preceded by their data type, within the enclosed parentheses. If there are no parameters, you must use empty parentheses ().</li>
+    <li> <b>Exception list:</b> The exceptions you expect the method to throw. You can specify these exception(s).
+</li>
+    <li> <b>Method body:</b> It is the block of code, enclosed between braces, that you need to execute to perform your intended operations
+</li>
+</ul> 
+</p>
+<p> <b style="color: orange;">Message Passing:</b> Objects communicate with one another by sending and receiving information to each other. A message for an object is a request for execution of a procedure and therefore will invoke a function in the receiving object that generates the desired results. Message passing involves specifying the name of the object, the name of the function and the information to be sent.
+
+Now that we have covered the basic prerequisites, we will move on to the 4 pillars of OOPs which are as follows. But, let us start by learning about the different characteristics of an Object-Oriented Programming Language.</p>
+<p>OOPS concepts are as follows: 
+
+<ol>
+    <li style="color: orange;">Class</li>
+    <li style="color: orange;">Object</li>
+    <li style="color: orange;">Method and method passing
+    </li>
+    <li>Pillars of OOPs
+    </li>
+    <ul>
+        <li style="color: orange;">Abstraction</li>
+        <li style="color: orange;">Encapsulation</li>
+        <li style="color: orange;">Inheritance</li>
+        <li style="color: orange;">Polymorphism</li>
+        <ul>
+            <li>Compile-time polymorphism
+            </li>
+            <li>Runtime polymorphism
+            </li>
+        </ul>
+    </ul>
+</ol>
+</p>
+
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190717114649/Object-Oriented-Programming-Concepts.jpg" alt=" vaibhav " class="center">
+<br>
+<p>A <b><u style="color: orange;">class</u></b> is a user-defined blueprint or prototype from which objects are created. It represents the set of properties or methods that are common to all objects of one type. Using classes, you can create multiple objects with the same behavior instead of writing their code multiple times. This includes classes for objects occurring more than once in your code. In general, class declarations can include these components in order: </p>
+<ol>
+    <li><b>Modifiers:</b> A class can be public or have default access.
+    </li>
+    <li><b>Class name:</b> The class name should begin with the initial letter capitalized by convention.
+    </li>
+    <li><b>Superclass (if any):</b> The name of the class’s parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.
+    </li>
+    <li><b>Interfaces (if any):</b> A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
+    </li>
+    <li><b>Body:</b> The class body is surrounded by braces, { }.
+    </li>
+</ol>
+<!-- <br> -->
+<p>An <b>object</b> is a basic unit of Object-Oriented Programming that represents real-life entities. A typical Java program creates many objects, which as you know, interact by invoking methods. The objects are what perform your code, they are the part of your code visible to the viewer/user. An object mainly consists of: </p>
+
+<ol>
+    <li><b>State:</b> It is represented by the attributes of an object. It also reflects the properties of an object.</li>
+    <li><b>Behavior:</b> It is represented by the methods of an object. It also reflects the response of an object to other objects.</li>
+    <li><b>Identity:</b> It is a unique name given to an object that enables it to interact with other objects.</li>
+    <li><b style="color: orange;">Method:</b> A method is a collection of statements that perform some specific task and return the result to the caller. A method can perform some specific task without returning anything. Methods allow us to reuse the code without retyping it, which is why they are considered time savers. In Java, every method must be part of some class, which is different from languages like C, C++, and Python.</li>
+</ol>
+<br>
+<p>Let us now discuss the 4 pillars of <b>OOPs</b>:</p>
+<p ><b>Pillar 1:</b> <u style="color: orange;" >Abstraction</u></p>
+<p>Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators will increase the car speed or applying brakes will stop the car, but he does not know how on pressing the accelerator, the speed is actually increasing. He does not know about the inner mechanism of the car or the implementation of the accelerators, brakes etc. in the car. This is what abstraction is. </p>
+<p>In Java, abstraction is achieved by <u>interfaces</u> and <u>abstract classes</u>. We can achieve 100% abstraction using interfaces.</p>
+<p ><b>Pillar 2:</b> <u style="color: orange;">Encapsulation</u></p>
+<p>It is defined as the wrapping up of data under a single unit. It is the mechanism that binds together the code and the data it manipulates. Another way to think about encapsulation is that it is a protective shield that prevents the data from being accessed by the code outside this shield. </p>
+<ul>
+    <li>Technically, in encapsulation, the variables or the data in a class is hidden from any other class and can be accessed only through any member function of the class in which they are declared.</li>
+    <li>In encapsulation, the data in a class is hidden from other classes, which is similar to what <b>data-hiding</b> does. So, the terms “encapsulation” and “data-hiding” are used interchangeably.</li>
+    <li>Encapsulation can be achieved by declaring all the variables in a class as private and writing public methods in the class to set and get the values of the variables.</li>
+</ul>
+<p ><b>Pillar 3:</b> <u style="color: orange;">Inheritance</u> </p>
+<p>Inheritance is an important pillar of OOP (Object Oriented Programming). It is the mechanism in Java by which one class is allowed to inherit the features (fields and methods) of another class. </p>
+<p>Let us discuss some frequently used important terminologies:</p>
+<ul>
+    <li> <b>Superclass:</b> The class whose features are inherited is known as superclass (also known as base or parent class).</li>
+    <li> <b>Subclass:</b> The class that inherits the other class is known as subclass (also known as derived or extended or child class). The subclass can add its own fields and methods in addition to the superclass fields and methods.</li>
+    <li> <b>Reusability:</b> Inheritance supports the concept of “reusability”, i.e. when we want to create a new class and there is already a class that includes some of the code that we want, we can derive our new class from the existing class. By doing this, we are reusing the fields and methods of the existing class.</li>
+</ul>
+
+<p ><b>Pillar 4:</b> <u style="color: orange;">Polymorphism</u></p>
+<p>It refers to the ability of object-oriented programming languages to differentiate between entities with the same name efficiently. This is done by Java with the help of the signature and declaration of these entities. </p>
+</body>
+</html>
