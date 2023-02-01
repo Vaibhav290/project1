@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center; color: orange;">Operating System</h1>
+    <p><b style="color: orange;">What is an Operating System</b></p>
+    <p>A computer is a general purpose device that can execute sequences of instructions presented in a
+        formal format to perform numerical calculations and other tasks. Computer science is the study of computer systems and computing processes.Computer hardware is the collection of all physical elements of the computer system.
+        <b>Computer software</b> is the collection of all programs stored in and executed by a computer system.
+        <b>Application software</b> performs specific task for the user.
+        <b>System software</b> operates and controls the computer system, and provides a platform to run
+        application software.
+        An <b>operating system</b> is a piece of software that manages all the resources of a computer system,
+        both hardware and software, and provides an environment in which the user can execute his/her
+        programs in a convenient and efficient manner. Operating systems exist because they offer a reasonable way to solve the problem of creating a
+        usable computer system.
+        An operating system : 
+        <ul>
+            <li style="color: yellow;">manages the computer hardware
+            </li>
+            <li style="color: yellow;">facilitates execution of application programs</li>
+            <li style="color: yellow;">acts as an intermediary between the user and the computer hardware</li>
+            <li style="color: yellow;">designed to be convenient and efficient</li>
+        </ul>
+        The operating system provides the means for proper use of the resources in the operation of the
+        computer system.</p>
+        <p>An operating system acts as an :
+            <ul>
+                <li><b style="color: orange;">Resource allocator</b></li>
+                <li><b style="color: orange;">Control program</b></li>
+            </ul> </p>
+        <p style="color: orange;">Types of operating systems :
+            <ul>
+            <li style="color: yellow;">Single process operating system</li>
+            <li style="color: yellow;">Batch-processing operating system</li>
+            <li style="color: yellow;">Multiprogramming operating system</li>
+            <li style="color: yellow;">Multitasking operating system</li>
+        </ul></p>
+
+        <p> <b style="color: orange;">Multitasking</b> is a logical extension of multiprogramming.
+            CPU executes multiple tasks by switching among them.
+            The switching is very fast.
+            Requires an interactive (hands-on) computer where the user can directly interact with the computer.
+            Response time should be minimal.
+            A <b style="color: orange;">kernel</b> is that part of the operating system which interacts directly with the hardware and
+            performs the most crucial tasks.
+            A <b style="color: orange;">microkernel</b> is much smaller in size than a conventional kernel and supports only the core
+            operating system functionalities.
+            A <b style="color: orange;">shell,</b> also known as a command interpreter, is that part of the operating system that receives
+            commands from the users and gets them executed.
+            A <b style="color: orange;">system call</b> is a mechanism using which a user program can request a service from the kernel for
+            which it does not have the permission to perform.
+            User programs typically do not have permission to perform operations like accessing I/O devices and
+            communicating other programs.
+            A user program invokes system calls when it requires such services.
+            System calls provide an interface between a program and the operating system.
+            System calls are of different types.
+            E.g.  fork, exec, getpid, getppid, wait, exit.</p>
+
+            <h3><b style="color: orange;">What is Process?</b></h3>
+            <p>A process is a program in execution.
+                A process is a unit of work in a computer system.
+                The terms process and job are used interchangeably.
+                A process comprises of :
+                <ul>
+                    <li style="color: yellow;">text section containing the program code</li>
+                    <li style="color: yellow;">current activity represented by the values of the program counter and other registers</li>
+                    <li style="color: yellow;">program stack</li>
+                    <li style="color: yellow;">data section containing global variables</li>
+                    <li style="color: yellow;">heap</li>
+                </ul> </p>
+            <p>A program is a passive entity while a process is an active entity.
+                Process state is defined by the current activity of the process.
+                As a process executes, its state changes.</p>
+            <p>Only one process can be in the running state at any instant.
+                Many processes can be ready or waiting.
+                Each process is internally represented by the operating system by a process control block (PCB) also
+                called task control block.
+                PCB contains all information associated with the process :
+                <ul>
+                    <li style="color: yellow;">Process state</li>
+                    <li style="color: yellow;">Values of program counter and other registers</li>
+                    <li style="color: yellow;">CPU scheduling information - priority, pointer to scheduling queue, etc.</li>
+                    <li style="color: yellow;">Accounting information - process id, CPU- and real- time used, time limits, etc.</li>
+                    <li style="color: yellow;">I/O status information - list of i/o devices allocated, list of open files, etc.</li>
+                </ul> </p>
+            <h3><b style="color: orange;">What is process scheduling?</b></h3>
+            <p><b style="color: orange;">Process scheduling</b> is selecting one process for execution out of all the ready processes.
+                The objective of multiprogramming is to have some process running at all times so as to maximize
+                CPU utilization.
+                The objective of multitasking is to switch the CPU among the processes so frequently that the user
+                can interact with each process while it is running.
+                To meet these objectives the process scheduler selects one of the available processes for execution.
+                <b style="color: orange;">Scheduling queues</b> are used to perform process scheduling.
+                As a process enters the system, it is put in a job queue that contains all the processes in the system.
+                The processes that are residing in the memory and are ready for execution are kept in the ready
+                queue.
+                The ready <b style="color: orange;">queue</b> is implemented as a linked list of PCBs with a header containing pointers to the first
+                and the last PCBs.
+                The list of the processes waiting for a particular i/o device is called a device queue.
+                Each device has its own device queue.</p>
+
+            <p><b style="color: orange;">Types Of Scheduler : </b></p>
+            <p>A process migrates among the various scheduling queues throughout its lifetime.
+                The operating system has to select the processes from the queues according to some criteria.
+                The selection is done by the appropriate scheduler.</p>
+            <p>A <b style="color: orange;">long-term scheduler (job scheduler)</b> selects processes from those submitted by the user and loads
+                them into the memory.
+                The long-term scheduler controls the degree of multiprogramming which is represented by the
+                number of processes in the memory.
+                It is invoked less frequently.</p>
+            <p>A <b style="color: orange;">short-term scheduler (CPU scheduler)</b> selects one of the processes in the memory and allocates
+                the CPU to it.
+                The short-term scheduler is invoked frequently and should be very fast.</p>
+            <p>The long-term scheduler should select a proper mix of CPU-bound processes and i/o-bound
+                processes.
+                A CPU-bound process spends most of its time doing computations.
+                An i/o-bound process spends most of its time doing i/o.
+                Some multitasking operating systems, like Unix and Windows, do not use long-term schedulers.
+                All new processes are put in the memory for the perusal of the short-term scheduler.</p>
+            <p>A <b style="color: orange;">medium-term scheduler</b> removes processes from the memory and from the competition for the
+                CPU, thus reducing the degree of multiprogramming.
+                The processes can be later reintroduced in the memory and their executions can be resumed.
+                This scheme is called swapping.
+                Swapping may be used to improve process mix and to free up some memory in uncontrollable
+                circumstances.</p>
+            <p><b style="color: orange;">Context switching</b> is done to switch between processes.
+                Switching the CPU to another process requires saving the state of the current process and reloading
+                the state of another process.
+                States are saved into and reloaded from PCBs.
+                Context-switch time is a pure overhead as the system does not do any useful work during a control
+                switch.
+                Context-switch time depends highly on the hardware.
+                Context switching is faster on RISC processors with overlapped register windows.
+                <b>Process creation</b> is one process creating another process.
+                The processes are called parent process and child process, respectively.
+                Each process has a unique id.
+                A process may obtain resources either from its parent or from the operating system directly.</p>
+            <p>A parent process may continue executing with its children processes or may wait for them to
+                complete.
+                A process may be a duplicate of its parent process (same code and data) or may have a new program
+                loaded into it.</p>
+            <p>Process termination marks the deletion of the PCB of the process.
+                A parent process may terminate a child process –
+                - if it has exceeded its resource usage
+                - if its result is no more needed
+                - if the parent process is terminating and the operating system does not allow an orphan
+                process (this may lead to cascading process terminations)
+                Typically, the kernel is the first process to be created, is the ancestor of all other processes and is at
+                the root of the process tree.
+                A zombie process is a process that has terminated but its PCB still exists because its parent has not
+                yet accepted its return value.</p>
+            <p>A thread is the smallest sequence of instructions that can be managed independently by a
+                scheduler.
+                A thread is a component of a process.
+                Multiple threads can exist within the same process, executing concurrently and share resources such
+                as memory.
+                The threads of a process share its instructions (executable code) and its context (the values of its
+                variables at any given moment).
+                Difference between process and thread :
+                <ul>
+                    <li>processes are typically independent while threads exist as parts of a process</li>
+                    <li>processes carry considerably more state information than threads, whereas multiple threads
+                        within a process share process state as well as memory and other resources</li>
+                    <li>processes have separate address spaces, whereas threads share their address space</li>
+                    <li>processes interact only through system-provided inter-process communication mechanisms</li>
+                    <li>context switching between threads in the same process is typically faster than context
+                        switching between processes</li>
+                </ul>
+
+                
+                <b style="color: yellow;">Advantages of multi-threaded programming :</b> 
+                <ul>
+                    <li>responsiveness</li>
+                    <li>faster execution</li>
+                    <li>better resource utilization</li>
+                    <li>easy communication</li>
+                    <li>parallelization</li>
+                </ul> </p>
+                <h3><b style="color: orange;">Scheduling Algorithm : </b></h3>
+                <p style="color: orange;"><b>First-come first-served (FCFS) scheduling :</b>
+                    <ul>
+                        <li>non-preemptive</li>
+                        <li> high average waiting time</li>
+                        <li>convoy effect - several small processes may need to wait if a large process is given the CPU</li>
+                    </ul> </p>
+                <p style="color: orange;"> <b>Shortest-job-first (SJF) scheduling :</b>
+                    <ul>
+                        <li>process with the smallest next CPU burst is selected</li>
+                        <li>FCFS to break ties</li>
+                        <li>more appropriate term: shortest-next-CPU-burst-first</li>
+                        <li>optimal, but cannot be implemented</li>
+                    </ul></p>
+                    <p style="color: orange;"> <b>Priority scheduling :</b>
+                        <ul>
+                            <li>CPU is allocated to the process with the highest priority</li>
+                            <li>priority range be 0 to 7 (say), with 0 representing the highest or the lowest priority</li>
+                            <li>priority may depend on internal factors (time limit, memory requirement, number of open
+                                files, etc.) and external factors (user, department, etc.)</li>
+                            <li>may be preemptive or non-preemptive</li>
+                            <li>SJF is a special case of priority scheduling, with priority inversely proportional to predicted
+                                next CPU burst length</li>
+                            <li>may cause starvation, i.e. indefinite blocking of processes</li>
+                            <li>aging: gradually increase the priority of a process waiting for a long time</li>
+                            <li>priority inversion: a low-priority process gets the priority of a high-priority process waiting
+                                for it</li>
+                        </ul> </p>
+                <p style="color: orange;"> <b>Round robin (RR) scheduling :</b>
+                    <ul>
+                        <li>a small time quantum or time slice is defined</li>
+                        <li>the ready queue is treated as a circular queue</li>
+                        <li>each process is allocated the CPU for one time quantum</li>
+                        <li>preemptive</li>
+                        <li>if time quantum is too large, then RR behaves like FCFS</li>
+                        <li>if time quantum is too small, then RR behaves like processor sharing</li>
+                        <li>rule of thumb: 80% CPU bursts should be shorter than the time quantum</li>
+                    </ul> </p>
+
+
+
+</body>
+</html>

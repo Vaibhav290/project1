@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="v.css">
+</head>
+<body>
+    <h1 style="text-align: center; color: orange;">Computer Networking</h1>
+
+    <p><b style="color: orange;">How does a computer network work :</b></p>
+    <p>
+        <ul>
+            <li>Specialized devices such as switches, routers, and access points form the foundation of computer networks. 
+</li>
+            <li>Switches connect and help to internally secure computers, printers, servers, and other devices to networks in homes or organizations. Access points are switches that connect devices to networks without the use of cables.
+</li>
+            <li>Routers connect networks to other networks and act as dispatchers. They analyze data to be sent across a network, choose the best routes for it, and send it on its way. Routers connect your home and business to the world and help protect information from outside security threats. 
+</li>
+            <li>While switches and routers differ in several ways, one key difference is how they identify end devices. A Layer 2 switch uniquely identifies a device by its "burned-in" MAC address. A Layer 3 router uniquely identifies a device's network connection with a network-assigned IP address. 
+</li>
+            <li>Today, most switches include some level of routing functionality. 
+</li>
+            <li>MAC and IP addresses uniquely define devices and network connections, respectively, in a network. A MAC address is a number assigned to a network interface card (NIC) by a device's manufacturer. An IP address is a number assigned to a network connection.
+
+</li>
+        </ul>
+
+</p>
+
+<p><b style="color: orange;">How is computer networking evolving?</b></p>
+<p>Modern-day networks deliver more than connectivity. Organizations are embarking on transforming themselves digitally. Their networks are critical to this transformation and to their success. The types of network architectures that are evolving to meet these needs are as follows:</p>
+<ul>
+    <li> <b>Software-defined  (SDN):</b> In response to new requirements in the "digital" age, network architecture is becoming more programmable, automated, and open. In software-defined networks, routing of traffic is controlled centrally through software-based mechanisms. This helps the network to react quickly to changing conditions.</li>
+    <li> <b>Intent-based:</b> Building on SDN principles, intent-based networking (IBN) not only introduces agility but also sets up a network to achieve desired objectives by automating operations extensively, analyzing its performance, pinpointing problematic areas, providing all-around security, and integrating with business processes.</li>
+    <li> <b>Virtualized:</b> The underlying physical network infrastructure can be partitioned logically, to create multiple "overlay" networks. Each of these logical networks can be tuned to meet specific security, quality-of-service (QoS), and other requirements.</li>
+    <li> <b>Controller-based:</b> Network controllers are crucial to scaling and securing networks. Controllers automate networking functions by translating business intent to device configurations, and they monitor devices continuously to help ensure performance and security. Controllers simplify operations and help organizations respond to changing business requirements.</li>
+    <li> <b>Multidomain integrations:</b> Larger enterprises may construct separate networks, also called networking domains, for their offices, WANs, and data centers. These networks communicate with one another through their controllers. Such cross-network, or multidomain, integrations generally involve exchanging relevant operating parameters to help ensure that desired business outcomes that span network domains are achieved.</li>
+</ul>
+
+
+<p><b style="color: orange;">What is a Client? What is a Server? And What is a Host?</b></p>
+
+ <ul>
+    <li> <b style="color: yellow;">Client :</b> A client is a computer hardware device or software that accesses a service made available by a server. The server is often (but not always) located on a separate physical computer.
+    </li>
+    <li><b style="color: yellow;">Server :</b>A server is a physical computer dedicated to run services to serve the needs of other computers. Depending on the service that is running, it could be a file server, database server, home media server, print server, or web server. </li>
+    <li><b style="color: yellow;">Host :</b>A host is a computer, connected to other computers for which it provides data or services over a network. In theory, every computer connected to a network acts as a host to other peers on the network. In essence, a host reflects the logical relationship of two or more computers on a network.</li>
+ </ul>
+ <p><b style="color: orange;">How do I access a server?</b></p>
+ <p>A server can be located inside or outside of your LAN. Accessibility to the server is determined by whether or not it has a public IP address or private IP address. If the server has a public IP address, it can be accessed from the web. If it has a private IP address, it can only be accessed from inside of your LAN (unless you setup port forwarding for remote access).
+
+ </p>
+ <img src="https://i0.wp.com/learntomato.flashrouters.com/wp-content/uploads/client-server-model.jpg?w=514&ssl=1" alt="vaibhav" class="center">
+ <p><b style="color: orange;">What is peer in computer network :</b></p>
+ <p>The entities comprising the corresponding layers on different machines are called peers. The peers may be software processes, hardware devices, or even human beings. In other words, it is the peers that communicate by using the protocol to talk to each other.</p>
+ <p><b style="color: orange;">What is BandWidth :</b></p>
+ <p>Network bandwidth is a measurement indicating the maximum capacity of a wired or wireless communications link to transmit data over a network connection in a given amount of time. Typically, bandwidth is represented in the number of bits, kilobits, megabits or gigabits that can be transmitted in 1 second. Synonymous with capacity, bandwidth describes data transfer rate. Bandwidth is not a measure of network speed -- a common misconception.</p>
+ <p><b style="color: orange;">What is jitter? How to test and reduce internet jitter?</b></p>
+ <p>Information is transported from your computer in data packets across the internet. They are usually sent at regular intervals and take a set amount of time. Jitter is when there is a time delay in the sending of these data packets over your network connection. This is often caused by network congestion, and sometimes route changes.
+
+    Essentially, the longer data packets take to arrive, the more jitter can negatively impact the video and audio quality.
+    
+    This can be an annoyance when you’re using your computer for recreational purposes. It’s close to unbearable in a professional setting when you’re making a conference call or trying to connect to the team. Jitter can be the difference between a successful voice over internet protocol (VoIP) call and a disastrous, glitchy one. </p>
+    <p><b style="color: orange;">What is Packet?</b></p>
+    <p>In networking, a packet is a small segment of a larger message. Data sent over computer networks*, such as the Internet, is divided into packets. These packets are then recombined by the computer or device that receives them.
+
+        Suppose Alice is writing a letter to Bob, but Bob's mail slot is only wide enough to accept envelopes the size of a small index card. Instead of writing her letter on normal paper and then trying to stuff it through the mail slot, Alice divides her letter into much shorter sections, each a few words long, and writes these sections out on index cards. She delivers the group of cards to Bob, who puts them in order to read the whole message.
+        
+        This is similar to how packets work on the Internet. Suppose a user needs to load an image. The image file does not go from a web server to the user's computer in one piece. Instead, it is broken down into packets of data, sent over the wires, cables, and radio waves of the Internet, and then reassembled by the user's computer into the original photo.</p>
+        <p><b style="color: orange;">Why use packets?</b></p>
+        <p>A packet header is a "label" of sorts, which provides information about the packet’s contents, origin, and destination.
+
+            When Alice sends her series of index cards to Bob, the words on those cards alone will not give Bob enough context to read the letter correctly. Alice needs to indicate the order that the index cards go in so that Bob does not read them out of order. She also should indicate that each one is from her, in case Bob receives messages from other people while she is delivering hers. So Alice adds this information to the top of each index card, above the actual words of her message. On the first card she writes "Letter from Alice, 1 of 20," on the second she writes "Letter from Alice, 2 of 20," and so on.
+            
+            Alice has created a miniature header for her cards so that Bob does not lose them or mix them up. Similarly, all network packets include a header so that the device that receives them knows where the packets come from, what they are for, and how to process them.
+            
+            Packets consist of two portions: the header and the payload. The header contains information about the packet, such as its origin and destination IP addresses (an IP address is like a computer's mailing address). The payload is the actual data. Referring back to the photo example, the thousands of packets that make up the image each have a payload, and the payload carries a little piece of the image.</p>
+
+<p><b style="color: orange;">What Does Frame mean :</b></p>
+<p>In networking, a frame is a unit of data. A frame works to help identify data packets used in networking and telecommunications structures. Frames also help to determine how data receivers interpret a stream of data from a source.One way to define frames in networking is that the frame is a primary data unit within Level 2, or the data link layer of the OSI model. By contrast, Level 3, or the networking layer of the OSI model uses the packet as a primary data unit.
+
+    Frames and packets may have different terminology attached to their use depending on the context or industry in question. In general, the frame is a formatting resource for data that needs to be split up into recognizable pieces in order to be interpreted by a receiver.</p>
+
+    <p><b style="color: orange;">What is LocalHost?</b></p>
+    <p>When you call an IP address on your computer, you try to contact another computer on the internet but when you call the IP address 127.0.0.1 then you are communicating with the local host. Localhost is always your own computer. Your computer is talking to itself when you call the local host. Your computer does not always directly identify the local host. Within your personal network localhost has a separate IP address like 192.168.0.1. (for most cases) which is different from the one you use on the internet. This is usually dynamically assigned by the internet service provider (ISP). Localhost can be seen as a server that is used on your own computer.</p>
+    <p><b>127.0.0.1 : how does loopback work?</b></p>
+    <p>To communicate with each other within a network IP addresses are used. The participants in the network have their own unique addresses. Using TCP/IP data packets are able to reach the correct destination. The protocol pair Transmission Control Protocol (TCP) and Internet Protocol (IP) are some of the main features of the internet. TCP/IP is also used outside of the internet in local networks. The Internet Protocol is responsible for allowing the IP address and subnet mask to address subscribers in a network during the transmission. 
+
+        The allocation of public IP addresses is regulated by an international organization which is the Internet Corporation for Assigned Names and Numbers (ICANN). ICANN is also responsible for the allocation of domain names called the Domain Name System (DNS). But certain address ranges are reserved for special purposes, like the range from 127.0.0.0 to 127.255.255.255. There is no reliable information on why that range was chosen. IP addresses on the internet are divided into different classes. The first class Class A started with 0.0.0.0 (reserved address) and ended with 127.255.255.255. 127 is the last block of the Class A network. Its important position could have been the reason for its selection. </p>
+        <p><b style="color: orange;">What is BitRate :</b></p>
+        <p>Network connections can send bits very fast. We measure that speed using the bit rate, the number of bits of data that are sent each second.
+            The earliest Internet connections were just 757575 bps (bits per second). These days, connections are more often measured in Mbps (megabits per second).
+            A megabit is huge: 111 million bits! A 101010 Mbps connection transfers data at 101010 million bits per second.
+            That's one bit every 100100100 nanoseconds (0.00000010.00000010, point, 0000001 seconds).</p>
+        <p><b style="color: orange;">Noise :</b></p>
+        <p>Noise is any undesired signal in a communication circuit. Another definition calls noise unwanted disturbances superimposed on a useful signal, which tends to obscure its information content. There are many varieties of noise; however, the four most important to the telecommunication/data communication technologist are thermal noise, intermodulation noise, crosstalk and impulse noise.
+
+            Noise refers to any external and unwanted information that interferes with a transmission signal. Noise can diminish transmission strength and disturb overall communication efficiency. In communications, noise can be created by radio waves, power lines, lightning and bad connections.</p>
+            <p> <b>Thermal noise :</b>
+                Thermal noise occurs in all transmission media and communication equipment, including passive devices. Every equipment element and the transmission medium itself contribute thermal noise to a communication system if the temperature of that element or medium is above absolute zero.</p>
+      <p> <b>Intermodulation (IM) noise :</b>
+        Intermediation (IM) Noise is the result of the presence of intermodulation products. If two signals of frequencies F1 and F2 are passed through a nonlinear device or medium, the result will contain IM products that are spurious frequency energy components. IM products may be produced from harmonics of the desired signals in question.</p>
+       <p> <b>Crosstalk : </b>
+        A disturbance caused by electromagnetic interference, along with a circuit or a cable pair. A telecommunication signal disrupts a signal in an adjacent circuit and can cause the signals to become confused and cross over each other.</p> 
+       
+        <p><b style="color: orange;">What Is Attenuation in Networking?</b></p>
+        <p>When used by networking professionals, the word attenuation refers to the loss of signal strength due to external or internal factors. Let’s explore how attenuation occurs and what options are available to increase signal strength.</p>
+        <p>Attenuation is the loss of signal strength in networking cables or connections. This typically is measured in decibels (dB) or voltage and can occur due to a variety of factors. It may cause signals to become distorted or indiscernible. An example of this is Wi-Fi signal and strength getting noticeably weaker the further that your device is from the router.</p>
+        <p><b style="color: orange;">Distortion</b></p>
+        <p>Distortion describes an interruption of transmitting signals that cause an unclear reception. Distortion is commonly found in sound generated or received by a computer, video, or display signals and data cables such as network cables.</p>
+        <p><b style="color: orange;">What’s difference between The Internet and The Web ?</b></p>
+        <p>Do many folks consider that they both are the same but are they really the same?
+
+            The Internet is a global network of networks while the Web, also referred to formally as World Wide Web (www) is a collection of information that is accessed via the Internet. Another way to look at this difference is; the Internet is infrastructure while the Web is served on top of that infrastructure. Alternatively, the Internet can be viewed as a big book store while the Web can be viewed as a collection of books on that store. At a high level, we can even think of the Internet as hardware and the Web as software!
+            
+            Web applications use HTTP protocol which is a layer over TCP protocol. Whereas internet applications can use either TCP or UDP protocol. To visualize the difference think of it as the internet is a network of many computers connected together so you can use any port say 90 to send or receive data whereas in web port is fixed as HTTP uses port 80 to communicate and also the data which is sent is HTML, CSS, and JavaScript. So if you want a feel of internet application make a socket connection at a random port and send data to another computer via the socket. So in this case you are using the internet for communication and not the web.
+            
+            Hope this helps!!</p>
+           <h3 style="color: orange;">Types of Transmission Media</h3>
+           <p>In data communication terminology, a transmission medium is a physical path between the transmitter and the receiver i.e. it is the channel through which data is sent from one place to another. Transmission Media is broadly classified into the following types:  </p>
+           <img src="https://lh5.googleusercontent.com/vggRaddYbDI8Dm8fxVH7imMDdX9feEIniwuTi-jJqrnf9huSsVo7IeGb6ZGUOTqVuppAZ7krz-Q5ncg95KI_ATiAJdzD82Py6t8sVsZB-lMhnined9NcO09CRcPIXW8wKf_hF9Qwv3vFCesePwo-J5X3eIhoTRSP2fqGz5WVbaJSBA2QuepSr8OsXA " alt="abc" class="vaibhav">
+           <p> <b style="color: orange;">1. Guided Media:</b> It is also referred to as Wired or Bounded transmission media. Signals being transmitted are directed and confined in a narrow pathway by using physical links. 
+             <b style="color: yellow;">Features:</b>  
+            <ul>
+                <li>            High Speed
+                </li>
+                <li>            Secure
+                </li>
+                <li>Used for comparatively shorter distances
+                </li>
+            </ul>
+            There are 3 major types of Guided Media: </p>
+
+            <ol>
+                <li> <b style="color: orange;">Twisted Pair Cable : </b>
+                    It consists of 2 separately insulated conductor wires wound about each other. Generally, several such pairs are bundled together in a protective sheath. They are the most widely used Transmission Media. Twisted Pair is of two types: </li>
+                    <ul>
+                        <li><b style="color: yellow;">Unshielded Twisted Pair (UTP): </b>UTP consists of two insulated copper wires twisted around one another. This type of cable has the ability to block interference and does not depend on a physical shield for this purpose. It is used for telephonic applications.</li>
+                        <p> <b>Advantages: </b>
+                            <br>
+                            ⇢ Least expensive <br>
+                            
+                            ⇢ Easy to install <br>
+                            
+                            ⇢ High-speed capacity
+                        <br>
+                            
+                            <b>Disadvantages:</b>
+                           <br>
+                            ⇢ Susceptible to external interference <br>
+                            
+                            ⇢ Lower capacity and performance in comparison to STP <br>
+                            
+                            ⇢ Short distance transmission due to attenuation
+                        </p>
+                        <li> <b style="color: yellow;">Shielded Twisted Pair (STP):</b> 
+                            This type of cable consists of a special jacket (a copper braid covering or a foil shield) to block external interference. It is used in fast-data-rate Ethernet and in voice and data channels of telephone lines.</li>
+                            <p> <b>Advantages: </b>
+                                    <br>
+                                ⇢ Better performance at a higher data rate in comparison to UTP <br>
+                                
+                                ⇢ Eliminates crosstalk <br>
+                                
+                                ⇢ Comparatively faster <br>
+                                
+                                 <b>Disadvantages: </b>
+                                <br>
+                                ⇢ Comparatively difficult to install and manufacture <br>
+                                
+                                ⇢ More expensive <br>
+                                
+                                ⇢ Bulky</p>
+                        
+                    </ul>
+                <li> <b style="color: orange;">Coaxial Cable : </b>It has an outer plastic covering containing an insulation layer made of PVC or Teflon and 2 parallel conductors each having a separate insulated protection cover. The coaxial cable transmits information in two modes: Baseband mode(dedicated cable bandwidth) and Broadband mode(cable bandwidth is split into separate ranges). Cable TVs and analog television networks widely use Coaxial cables. </li>
+                <p> <b>Advantages: </b>
+                 <br>
+                 <ul>
+                    <li> High Bandwidth</li>
+                    <li>Better noise Immunity</li>
+                    <li>Easy to install and expand</li>
+                    <li>Inexpensive</li>
+                 </ul>
+                    
+                    
+                    <b>Disadvantages: </b>
+                    <ul>
+                        <li>Single cable failure can disrupt the entire network</li>
+                    </ul>
+                    </p>
+                <li><b style="color: orange;">Optical Fiber Cable : </b>It uses the concept of refraction of light through a core made up of glass or plastic. The core is surrounded by a less dense glass or plastic covering called the cladding. It is used for the transmission of large volumes of data. 
+
+                    The cable can be unidirectional or bidirectional. The WDM (Wavelength Division Multiplexer) supports two modes, namely unidirectional and bidirectional mode.
+                    
+                    </li>
+                    <p> <b>Advantages:</b>  
+                       <ul>
+                        <li>                        Increased capacity and bandwidth
+                        </li>
+                        <li>                        Lightweight
+                        </li>
+                        <li>                        Less signal attenuation
+                        </li>
+                        <li>                        Immunity to electromagnetic interference
+                        </li>
+                        <li>                        Resistance to corrosive materials
+                        </li>
+                        
+                       </ul>
+                        <b>Disadvantages:</b>  
+                        <ul>
+                            <li>                        Difficult to install and maintain
+                            </li>
+                            <li>                        High cost
+                            </li>
+                            <li>Fragile</li>
+                        </ul>
+                        </p>
+              <li> <b style="color: orange;">Unguided Media:</b>It is also referred to as Wireless or Unbounded transmission media. No physical medium is required for the transmission of electromagnetic signals.  </li>
+              <p> <b>Features: </b>  
+               <ul>
+                <li>                The signal is broadcasted through air
+                </li>
+                <li>                Less Secure
+                </li>
+                <li>Used for larger distances</li>
+               </ul>
+                </p>
+
+            </ol>
+            <p>There are 3 types of Signals transmitted through unguided media: </p>
+            <ol>
+                <li> <b style="color: orange;">Radio waves : </b>
+                    These are easy to generate and can penetrate through buildings. The sending and receiving antennas need not be aligned. Frequency Range:3KHz – 1GHz. AM and FM radios and cordless phones use Radio waves for transmission. </li>
+
+                <li> <b style="color: orange;">Microwaves : </b>
+It is a line of sight transmission i.e. the sending and receiving antennas need to be properly aligned with each other. The distance covered by the signal is directly proportional to the height of the antenna. Frequency Range:1GHz – 300GHz. These are majorly used for mobile phone communication and television distribution. </li>
+                <li> <b style="color: orange;">Infrared : </b> 
+                    Infrared waves are used for very short distance communication. They cannot penetrate through obstacles. This prevents interference between systems. Frequency Range:300GHz – 400THz. It is used in TV remotes, wireless mouse, keyboard, printer, etc.</li>
+            </ol>
+
+</body>
+</html>
